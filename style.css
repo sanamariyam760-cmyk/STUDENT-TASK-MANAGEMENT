@@ -1,0 +1,25 @@
+
+body {
+    background-color: #f2f2ff;
+    font-family: Arial;
+    text-align: center;
+}
+
+h1 {
+    background-color: purple;
+    color: white;
+    padding: 20px;
+}
+
+h2 {
+    color: purple;
+}
+
+.box {
+    background-color: white;
+    display: inline-block;
+    padding: 20px;
+    margin: 15px;
+    width: 150px;
+    border-radius: 10px;
+}
