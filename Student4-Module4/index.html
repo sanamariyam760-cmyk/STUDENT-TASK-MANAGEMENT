@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task Priority Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Task Priority Management</h1>
+        <p>Set and manage the priority of your tasks.</p>
+
+        <div class="form">
+            <input type="text" id="taskName"
+                placeholder="Enter task name">
+
+            <select id="priority">
+                <option value="">Select Priority</option>
+                <option value="High">High</option>
+                <option value="Medium">Medium</option>
+                <option value="Low">Low</option>
+            </select>
+
+            <button onclick="addPriorityTask()">
+                Add Task
+            </button>
+        </div>
+
+        <h2>My Priority Tasks</h2>
+
+        <div id="taskList"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
