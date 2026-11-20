@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f8;
+    margin: 0;
+    padding: 30px;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+}
+
+h1 {
+    color: #6a287e;
+}
+
+.task {
+    background-color: white;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px #ccc;
+}
+
+.task h3 {
+    color: #333;
+}
+
+button {
+    padding: 10px 18px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    margin-right: 8px;
+}
+
+.update {
+    background-color: green;
+}
+
+.delete {
+    background-color: red;
+}
+
+button:hover {
+    opacity: 0.8;
+}
