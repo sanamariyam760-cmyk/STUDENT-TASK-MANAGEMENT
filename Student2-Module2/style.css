@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f1f4f9;
+    margin: 0;
+    padding: 30px;
+}
+
+.container {
+    background: white;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+}
+
+h1, h2 {
+    text-align: center;
+    color: #263c63;
+}
+
+p {
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    height: 90px;
+}
+
+.btn {
+    display: inline-block;
+    background: #315b9b;
+    color: white;
+    padding: 12px 20px;
+    margin-top: 20px;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.back {
+    display: inline-block;
+    margin-top: 20px;
+    color: #315b9b;
+    text-decoration: none;
+}
+
+.task {
+    background: #eef3fa;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 8px;
+}
+
+.task button {
+    margin: 8px 5px 0 0;
+    padding: 8px 12px;
+    cursor: pointer;
+}
