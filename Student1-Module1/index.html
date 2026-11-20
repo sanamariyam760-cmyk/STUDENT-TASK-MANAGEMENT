@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Task Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Student Task Management System</h1>
+        <p>Manage your academic activities easily</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Dashboard</a>
+        <a href="add.html">Add Task</a>
+        <a href="view.html">View Tasks</a>
+    </nav>
+
+    <main>
+
+        <h2>Welcome Student!</h2>
+        <p class="subtitle">Your academic progress at a glance.</p>
+
+        <h3>Dashboard Overview</h3>
+
+        <section class="dashboard">
+
+            <div class="card total">
+                <h3>Total Tasks</h3>
+                <h1 id="total">0</h1>
+                <p>All assigned tasks</p>
+            </div>
+
+            <div class="card pending">
+                <h3>Pending Tasks</h3>
+                <h1 id="pending">0</h1>
+                <p>Tasks to be completed</p>
+            </div>
+
+            <div class="card completed">
+                <h3>Completed Tasks</h3>
+                <h1 id="completed">0</h1>
+                <p>Successfully completed</p>
+            </div>
+
+        </section>
+
+        <section class="progress-section">
+            <h2>Overall Task Progress</h2>
+
+            <div class="progress-info">
+                <span>Completion Rate</span>
+                <span id="percentage">0%</span>
+            </div>
+
+            <div class="progress-bar">
+                <div id="progress"></div>
+            </div>
+        </section>
+
+        <section class="recent-section">
+            <h2>Recent Tasks</h2>
+            <div id="recentTasks">
+                <p>No tasks added yet.</p>
+            </div>
+        </section>
+
+        <section class="quick-actions">
+            <h2>Quick Actions</h2>
+
+            <a href="add.html">+ Add New Task</a>
+            <a href="view.html">View All Tasks</a>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Student Task Management System © 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+
+
+ 

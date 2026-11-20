@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f2f8;
+    color: #333;
+}
+
+header {
+    background: linear-gradient(135deg, #641078, #a83291);
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+header h1 {
+    margin-bottom: 8px;
+}
+
+nav {
+    background: #47105d;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffd6ff;
+}
+
+main {
+    width: 90%;
+    max-width: 1100px;
+    margin: 35px auto;
+}
+
+main h2 {
+    color: #641078;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #777;
+    margin-bottom: 30px;
+}
+
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin: 25px 0;
+}
+
+.card {
+    padding: 30px 20px;
+    text-align: center;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    border-top: 5px solid #8125a0;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+}
+
+.card h3 {
+    margin-bottom: 15px;
+}
+
+.card h1 {
+    font-size: 40px;
+    color: #74158d;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #777;
+}
+
+.pending {
+    border-top-color: #e5a000;
+}
+
+.pending h1 {
+    color: #d18c00;
+}
+
+.completed {
+    border-top-color: #229b62;
+}
+
+.completed h1 {
+    color: #229b62;
+}
+
+.progress-section,
+.recent-section,
+.quick-actions {
+    background: white;
+    padding: 25px;
+    margin-top: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+}
+
+.progress-info {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0 10px;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 18px;
+    background: #e5e5e5;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+#progress {
+    width: 0%;
+    height: 100%;
+    background: linear-gradient(90deg, #641078, #bd50c9);
+    border-radius: 20px;
+    transition: width 0.5s;
+}
+
+.recent-task {
+    padding: 15px;
+    margin-top: 12px;
+    background: #f8f2fa;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.status {
+    color: #229b62;
+    font-weight: bold;
+}
+
+.quick-actions a {
+    display: inline-block;
+    background: #74158d;
+    color: white;
+    padding: 13px 22px;
+    margin: 15px 10px 0 0;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.quick-actions a:hover {
+    background: #47105d;
+}
+
+footer {
+    background: #47105d;
+    color: white;
+    text-align: center;
+    padding: 18px;
+    margin-top: 50px;
+}
+
+@media(max-width: 700px) {
+    .dashboard {
+        grid-template-columns: 1fr;
+    }
+
+    nav a {
+        margin: 0 7px;
+    }
+}
+
