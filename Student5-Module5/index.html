@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search and Filter Tasks</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Search & Filter Tasks</h1>
+        <p>Find your tasks easily</p>
+
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search task name..."
+                oninput="filterTasks()"
+            >
+
+            <select id="statusFilter"
+                    onchange="filterTasks()">
+
+                <option value="All">All Tasks</option>
+                <option value="Pending">Pending</option>
+                <option value="Completed">Completed</option>
+
+            </select>
+
+            <button onclick="resetFilters()">
+                Reset
+            </button>
+
+        </div>
+
+        <h2>My Tasks</h2>
+
+        <div id="taskList"></div>
+
+        <div class="navigation">
+
+            <button onclick="goToDashboard()">
+                Next Page
+            </button>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
